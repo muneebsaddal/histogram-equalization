@@ -15,7 +15,7 @@ def equalHist(img):
     return equalImg.reshape(img.shape)
 
 if __name__ == "__main__":
-    img = cv2.imread("test.png",0)
+    img = cv2.imread("img.png",0)
     showHist(img)
 
     #Local Histogram equalization using tiling approach
