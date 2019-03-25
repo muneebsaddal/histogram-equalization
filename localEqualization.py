@@ -36,7 +36,7 @@ if __name__ == "__main__":
     cv2.imwrite("equalized_tiling.png", newImage_0)
     showHist(newImage_0)
 
-    #Local Histogram equalization using tiling approach
+    #Local Histogram equalization using Sliding window approach
     newImage_1 = np.zeros((img.shape))
     windowSize = 64
     for i in range(0,img.shape[0]-windowSize):
